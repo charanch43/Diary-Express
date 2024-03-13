@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="register" method="Post">
+        <img src="images/login-bg.png" alt="background image" class="register__bg">
+        <div class="register__form">
+            <h1 class="register__title">REGISTER</h1>
+            <form action="/register" method="post" class="register__inputs">
+                <div class="register__box">
+                    <label for="username"><i class="fas fa-user"></i></label>
+                    <input type="text" id="username" name="username" placeholder="Username" class="register__input">
+                </div>
+                <div class="register__box">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" name="password" placeholder="Password" class="register__input">
+                </div>
+                <button type="submit" class="register__button">Register</button>
+            </form>
+            <div class="register__login">
+                <p>Already have an account? <a href="/login">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

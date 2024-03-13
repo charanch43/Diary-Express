@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login">
+        <img src="images/login-bg.png" alt="background image" class="login__bg">
+        <div class="login__form">
+            <h1 class="login__title">LOG IN</h1>
+            <form action="/login" method="post" class="login__inputs">
+                <div class="login__box">
+                    <label for="username"><i class="fas fa-user"></i></label>
+                    <input type="text" id="username" name="username" placeholder="Username" class="login__input">
+                </div>
+                <div class="login__box">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" name="password" placeholder="Password" class="login__input">
+                </div>
+                <button type="submit" class="login__button">Login</button>
+            </form>
+            <div class="login__register">
+                <p>Don't have an account? <a href="/register">Register</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
